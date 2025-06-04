@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+table {
+    margin: 20px auto;
+    border-spacing: 20px;
+    width: 90%;
+}
+
+td {
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h4 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer table {
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+footer a {
+    color: #00e676;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* WhatsApp & Call Link Styles */
+a[href^="tel:"],
+a[href^="https://wa.me"] {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a[href^="tel:"] {
+    background-color: #007bff;
+}
+
+a[href^="tel:"]:hover,
+a[href^="https://wa.me"]:hover {
+    opacity: 0.9;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    table,
+    td,
+    nav,
+    header,
+    section,
+    footer {
+        width: 100% !important;
+        display: block;
+        text-align: center;
+    }
+
+    img {
+        width: 90% !important;
+        height: auto !important;
+        margin: 10px auto;
+    }
+
+    iframe {
+        width: 90% !important;
+        height: auto;
+    }
+}
