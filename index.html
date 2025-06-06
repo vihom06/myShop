@@ -4,236 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-    }
-
-    header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-
-    nav {
-        background-color: #444;
-        padding: 10px;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 8px 12px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-
-    nav a:hover {
-        background-color: #666;
-    }
-
-    table {
-        margin: 20px auto;
-        border-spacing: 20px;
-        width: 90%;
-    }
-
-    td {
-        vertical-align: top;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    img {
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    section {
-        background-color: #fff;
-        margin: 30px auto;
-        padding: 20px;
-        width: 90%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    section h4 {
-        font-size: 22px;
-        color: #333;
-        margin-bottom: 10px;
-    }
-
-    footer {
-        background-color: #222;
-        color: #fff;
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    footer table {
-        width: 90%;
-        margin: auto;
-        color: white;
-    }
-
-    footer a {
-        color: #00e676;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
-    }
-
-    /* WhatsApp & Call Link Styles */
-    a[href^="tel:"],
-    a[href^="https://wa.me"] {
-        display: inline-block;
-        margin-top: 8px;
-        padding: 10px 15px;
-        background-color: #25D366;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
-
-    a[href^="tel:"] {
-        background-color: #007bff;
-    }
-
-    a[href^="tel:"]:hover,
-    a[href^="https://wa.me"]:hover {
-        opacity: 0.9;
-    }
-
-    iframe {
-        border-radius: 10px;
-    }
-
-    @media screen and (max-width: 768px) {
-        table,
-        td,
-        nav,
-        header,
-        section,
-        footer {
-            width: 100% !important;
-            display: block;
-            text-align: center;
-        }
-
-        img {
-            width: 90% !important;
-            height: auto !important;
-            margin: 10px auto;
-        }
-
-        iframe {
-            width: 90% !important;
-            height: auto;
-        }
-    }
-</style>
-
+    <title>Vikram Kirana And General Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <main>
+        <header id="header">
+            <div class="header-box">
+                <h1>Welcome To Vikram Kirana And General Store</h1>
+                <h1>#DimpleKiDukaan!!!</h1>
+            </div>
+            <nav>
+                <a class="navbutton" href="#header">Home</a>
+                <a class="navbutton" href="#aboutOurStore">About</a>
+                <a class="navbutton" href="#product-gallery">Store</a>
+                <a class="navbutton" href="#footer">Contact</a>
+            </nav>
+        </header>
 
-    <header id="header">
-        <h1>Welcome To Vikram Kirana And General Store</h1>
-        <h1>#dimpleKiDukaan!!!</h1>
-        <nav>
-        <a href="#header">Home</a>
-        <a href="#About Our Store">About</a>
-        <a href="#">Shop</a>
-        <a href="#Contact">Contact</a>
-    </nav>
-    </header>
+        <div class="outerbox">
+            <img src="dukaanoutside.jpg" alt="Shop Image" height="270px" width="270px">
+            <p><strong>Outside View:</strong> This image shows the front of Vikram Kirana and General Store,
+                located at a prime spot in Vasant Nagri, Vasai East...</p>
+        </div>
 
+        <div class="innerbox">
+            <img src="dukaaninside.jpg" alt="Shop Image" height="270px" width="250px">
+            <p><strong>Inside View:</strong> This image captures the interior of our store, where you’ll
+                find neatly arranged shelves stocked with essential groceries, household items, and daily needs...</p>
+        </div>
 
-    <div>
-        <table>
-            <tr>
-                <td>
-                    <img src="dukaanoutside.jpg" alt="Shop Image" height="200px" width="270px">
-                </td>
-                <td colspan="2">
-                    <strong>Outside View:</strong> This image shows the front of Vikram Kirana and General Store,
-                    located at a prime spot in Vasant Nagri, Vasai East. Our store is easily noticeable due to its clean
-                    and inviting entrance. Customers can quickly locate us, and we ensure the exterior remains neat and
-                    welcoming to provide a positive first impression to all visitors.
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <strong>Inside View:</strong> This image captures the interior of our store, where you’ll find
-                    neatly arranged shelves stocked with essential groceries, household items, and daily needs. We take
-                    pride in maintaining a clean, organized, and easy-to-navigate layout. Our goal is to make shopping
-                    quick, convenient, and comfortable for every customer who walks through our doors.
-                </td>
-                <td>
-                    <img src="dukaaninside.jpg" alt="Shop Image" height="270px" width="250px">
-                </td>
-            </tr>
-        </table>
-    </div>
+        <div id="aboutOurStore">
+            <section>
+                <h4>About Our Store.</h4>
+                <p> Welcome to Vikram Kirana and General Store, your trusted destination for daily essentials and
+                    household
+                    goods in Vasant Nagri, Vasai East. We take pride in serving our local community with a wide range of
+                    quality
+                    products, including groceries, pulses, grains, snacks, personal care items, and general household
+                    necessities. Our store is known for cleanliness, friendly service, and honest pricing. Whether
+                    you're
+                    shopping for your family's needs or picking up a few quick items, we ensure a smooth and pleasant
+                    experience. We believe in building long-term relationships with our customers based on trust and
+                    reliability. At Vikram Kirana and General Store, your satisfaction is our top priority. Visit us
+                    today
+                    and
+                    experience the comfort of local shopping with a personal touch.</p>
+            </section>
+        </div>
 
-    <div>
-        <section id="About Our Store">
-            <h4>About Our Store.</h4>
-            Welcome to Vikram Kirana and General Store, your trusted destination for daily essentials and household
-            goods in Vasant Nagri, Vasai East. We take pride in serving our local community with a wide range of quality
-            products, including groceries, pulses, grains, snacks, personal care items, and general household
-            necessities. Our store is known for cleanliness, friendly service, and honest pricing. Whether you're
-            shopping for your family's needs or picking up a few quick items, we ensure a smooth and pleasant
-            experience. We believe in building long-term relationships with our customers based on trust and
-            reliability. At Vikram Kirana and General Store, your satisfaction is our top priority. Visit us today and
-            experience the comfort of local shopping with a personal touch.
-        </section>
-    </div>
+        <div class="timings">
+            <h2>Store Timings</h2>
+            <p><strong>Mon – Sat:</strong> 7:00 AM – 10:00 PM</p>
+            <p><strong>Sunday:</strong> 6:00 AM – 11:00 PM</p>
+        </div>
 
+        <div class="product-gallery" id="product-gallery">
+            <h2>Popular Products</h2>
+            <div>
+                <img  src="aata.jpeg" alt="Aata">
+                <img src="maggi.jpeg" alt="Maggi">
+                <img src="oil.jpeg" alt="Oil">
+            </div>
+        </div>
 
-    <br /><br /><br />
+        <div class="delivery-info">
+            <h2>Home Delivery Available</h2>
+            <p>Call or WhatsApp us to place your order. Fast delivery within Vasai East.</p>
+        </div>
 
-    <footer id="Contact">
-        <table>
-            <tr>
-                <td>
-                    Contact Number: <a href="tel:+91 9552201181">9552201181</a>
-                    <br />
-                    WhatsApp Number: <a href="https://wa.me/919552201181" target="_blank">9552201181</a>
+        <div class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Always fresh products and polite service. Love shopping here!"</p>
+                <p>- Ramesh Sharma</p>
+            </div>
+            <div class="testimonial">
+                <p>"Clean and organized store. Reasonable pricing."</p>
+                <p>- Pooja Desai</p>
+            </div>
+        </div>
+    </main>
 
-                    <br />
-                    <p>
-                        <strong>Location: </strong> Veena Sur Shyam Complex, Agarwal Circle, Vasant Nagri, Vasai East,
-                        Mumbai,
-                        Maharashtra, India. PIN:401208.
-                    </p>
-                </td>
-                <td>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1369.5459321570415!2d72.82758167095338!3d19.404245877729753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9c405841407%3A0xaae5044e5cf17891!2sVikram%20Kirana%20And%20General%20Store!5e1!3m2!1sen!2sin!4v1749072685592!5m2!1sen!2sin"
-                        width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </td>
-            </tr>
-        </table>
-        &#169;  2025 All Rights Reserved Vikram Kirana And General Store.
+    <footer id="footer">
+        <div>
+            <strong>Contact: </strong><a href="tel:+91 9552201181">9552201181</a><br>
+            <strong>WhatsApp: </strong><a href="https://wa.me/919552201181">9552201181</a><br>
+            <strong>Location: </strong>Veena Sur Shyam Complex, Agarwal Circle, Vasant Nagri, Vasai East,<br> Mumbai,
+            Maharashtra, India. PIN:401208.
+            <div id="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1369.5459321570415!2d72.82758167095338!3d19.404245877729753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9c405841407%3A0xaae5044e5cf17891!2sVikram%20Kirana%20And%20General%20Store!5e1!3m2!1sen!2sin!4v1749072685592!5m2!1sen!2sin"
+                    width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <p>&#169; 2025 All Rights Reserved Vikram Kirana And General Store.</p>
+        </div>
     </footer>
 
+    <a href="https://wa.me/919552201181" class="whatsapp-float" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+    </a>
 </body>
 
 </html>
