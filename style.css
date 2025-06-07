@@ -10,6 +10,7 @@ body {
 
 /* Header */
 header {
+    border: 2px solid black;
     background-color: #aee0da;
     color: white;
     border-radius: 30px;
@@ -29,7 +30,7 @@ nav {
 }
 
 .navbutton {
-    border: 1px solid #aee0da;
+    border: 2px solid black;
     background-color: #119a8a;
     width: 80px;
     height: 40px;
@@ -44,6 +45,8 @@ nav {
 /* Content Boxes */
 .outerbox,
 .innerbox {
+    border: 2px solid black;
+
     background-color: #aee0da;
     display: flex;
     align-items: center;
@@ -55,6 +58,8 @@ nav {
 
 .outerbox img,
 .innerbox img {
+    border: 2px solid black;
+
     border-radius: 40px;
     max-width: 100%;
     height: 100%;
@@ -64,6 +69,8 @@ nav {
 
 /* About Section */
 #aboutOurStore {
+    border: 2px solid black;
+
     background-color: #aee0da;
     display: flex;
     margin: 20px;
@@ -77,24 +84,25 @@ nav {
 
 /* Footer */
 footer {
-    text-align: center;
     background-color: #aee0da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 20px;
     margin-top: 200px;
     border-radius: 20px;
-    height: 300px;
-    padding: 20px;
+    height: 420px;
+    border: 2px solid black;
 }
 
-/* Other Sections */
-#maps {
-    overflow: auto;
-}
 
 .testimonials,
 .timings,
 .product-gallery,
 .delivery-info {
+    border: 2px solid black;
+
     background-color: #aee0da;
     border-radius: 30px;
     margin: 40px 20px;
@@ -108,6 +116,8 @@ footer {
 }
 
 .product-gallery img {
+    border: 2px solid black;
+
     margin: 10px;
     border-radius: 20px;
     max-width: 100%;
@@ -138,6 +148,8 @@ footer {
     }
 
     .navbutton {
+        border: 2px solid black;
+
         width: auto;
         font-size: 5vw;
     }
@@ -153,6 +165,8 @@ footer {
 
     .outerbox img,
     .innerbox img {
+        border: 2px solid black;
+
         border-radius: 40px;
         max-width: 90%;
         height: 10%;
@@ -168,7 +182,10 @@ footer {
     footer {
         height: auto;
         font-size: 5vw;
+        text-align: center;
+        height: 500px;
     }
+
 
     .product-gallery img {
         margin: auto;
