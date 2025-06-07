@@ -1,23 +1,27 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #f9f7f1;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
 header {
     background-color: #aee0da;
     color: white;
     border-radius: 30px;
     margin: 100px;
     text-align: center;
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.header-box {
-    padding: 20px;
-}
-
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -37,6 +41,7 @@ nav {
     text-decoration: none;
 }
 
+/* Content Boxes */
 .outerbox,
 .innerbox {
     background-color: #aee0da;
@@ -50,9 +55,14 @@ nav {
 
 .outerbox img,
 .innerbox img {
-    border-radius: 70px;
+    border-radius: 40px;
+    max-width: 100%;
+    height: 100%;
+    width: 25%;
+    /* overflow: auto; */
 }
 
+/* About Section */
 #aboutOurStore {
     background-color: #aee0da;
     display: flex;
@@ -65,6 +75,7 @@ nav {
     padding: 20px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     background-color: #aee0da;
@@ -75,6 +86,7 @@ footer {
     padding: 20px;
 }
 
+/* Other Sections */
 #maps {
     overflow: auto;
 }
@@ -98,12 +110,11 @@ footer {
 .product-gallery img {
     margin: 10px;
     border-radius: 20px;
-    width: 150px;
-    height: 150px;
+    max-width: 100%;
+    height: 200px;
 }
 
-
-
+/* WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -111,123 +122,56 @@ footer {
     z-index: 1000;
 }
 
-body {
-    background-color: #f9f7f1;
-    /* soft cream */
-    color: #333;
-    /* dark text for readability */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* Responsive Styling for Small Devices */
 @media (max-width: 380px) {
     header {
-        background-color: #aee0da;
-        color: white;
-        border-radius: 30px;
-        text-align: center;
-        height: 350px;
-        width: 360px;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 20px auto;
+        padding: 20px;
+        height: 300px;
+        width: 100%;
     }
 
-    nav {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 10px;
+    header h1 {
+        font-size: 5vw;
     }
 
     .navbutton {
-        border: 1px solid #aee0da;
-        background-color: #119a8a;
-        width: 80px;
-        height: 40px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-decoration: none;
+        width: auto;
+        font-size: 5vw;
     }
 
     .outerbox,
     .innerbox {
-        background-color: #aee0da;
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        height: 500px;
-        border-radius: 100px;
+        height: auto;
         border: 2px solid black;
     }
 
+
     .outerbox img,
     .innerbox img {
-        border-radius: 70px;
+        border-radius: 40px;
+        max-width: 90%;
+        height: 10%;
+        width: 90%;
+        /* overflow: auto; */
     }
 
     #aboutOurStore {
-        background-color: #aee0da;
-        display: flex;
-        height: 500px;
-        text-align: center;
-        align-items: center;
-        border-radius: 50px;
+        height: auto;
+        font-size: 5vw;
     }
 
     footer {
-        text-align: center;
-        background-color: #aee0da;
-        margin: 20px;
-        margin-top: 200px;
-        border-radius: 20px;
-        height: 300px;
-        padding: 20px;
-    }
-
-    #maps {
-        overflow: auto;
-    }
-
-    .testimonials,
-    .timings,
-    .product-gallery,
-    .delivery-info {
-        background-color: #aee0da;
-        border-radius: 30px;
-        margin: 40px 20px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .testimonial {
-        margin: 10px 0;
-        font-style: italic;
+        height: auto;
+        font-size: 5vw;
     }
 
     .product-gallery img {
-        margin: 10px;
-        border-radius: 20px;
-        width: 150px;
-        height: 150px;
-    }
-
-
-
-    .whatsapp-float {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-    }
-
-    body {
-        background-color: #f9f7f1;
-        /* soft cream */
-        color: #333;
-        /* dark text for readability */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: auto;
+        height: auto;
     }
 }
